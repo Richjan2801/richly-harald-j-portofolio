@@ -119,7 +119,7 @@ function renderPortfolio() {
         <div class="container">
           <div class="hero-content">
             <h1 class="hero-title">
-              Hi, I'm <span class="highlight">${portfolioData.name}</span>
+              <span class="highlight">Hi, I'm</span> ${portfolioData.name}
             </h1>
             <h2 class="hero-subtitle">${portfolioData.title}</h2>
             <p class="hero-description">${portfolioData.bio}</p>
