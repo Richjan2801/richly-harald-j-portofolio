@@ -132,6 +132,15 @@ function renderPortfolio() {
       </section>
 
       <section id="about" class="about">
+      <section class="profile-picture">
+        <div class="container">
+          <div class="profile-image-container">
+            <img src="/images/profile-pic-richly.jpg" alt="Richly Harald Januar" class="profile-image">
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
         <div class="container">
           <div class="section-header">
             <h2 class="section-title">About Me</h2>
