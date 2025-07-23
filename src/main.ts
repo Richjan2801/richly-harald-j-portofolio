@@ -121,21 +121,15 @@ function renderPortfolio() {
             <h1 class="hero-title">
               <span class="highlight">Hi, I'm</span> ${portfolioData.name}
             </h1>
+            <div class="hero-profile-image">
+              <img src="/images/profile.jpg" alt="${portfolioData.name}" class="profile-image">
+            </div>
             <h2 class="hero-subtitle">${portfolioData.title}</h2>
             <p class="hero-description">${portfolioData.bio}</p>
             <div class="hero-actions">
               <button class="btn btn-primary" onclick="scrollToSection('projects')">View Projects</button>
               <button class="btn btn-secondary" onclick="scrollToSection('contact')">Get In Touch</button>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="about">
-      <section class="profile-picture">
-        <div class="container">
-          <div class="profile-image-container">
-            <img src="/images/profile-pic-richly.jpg" alt="Richly Harald Januar" class="profile-image">
           </div>
         </div>
       </section>

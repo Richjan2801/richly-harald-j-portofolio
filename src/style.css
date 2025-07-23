@@ -1,6 +1,4 @@
 /* Reset and base styles */
-@import "tailwindcss";
-
 * {
   margin: 0;
   padding: 0;
@@ -244,6 +242,48 @@ body {
 }
 
 /* Sections */
+/* Profile Picture Section */
+.profile-picture {
+  padding: var(--spacing-16) 0;
+  background: var(--white);
+}
+
+.profile-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--red-accent);
+  box-shadow: var(--shadow-lg);
+  transition: var(--transition);
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 10px 10px -5px rgb(0 0 0 / 0.04);
+}
+
+/* Responsive adjustments for profile picture */
+@media (max-width: 768px) {
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+}
+
 section {
   padding: var(--spacing-20) 0;
 }
