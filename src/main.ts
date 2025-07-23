@@ -5,7 +5,7 @@ const portfolioData = {
   name: "Richly Harald Januar",
   title: "Informatics | Developer",
   bio: "Informatics student with strong academic performance, hands-on experience in mobile app development, and proven leadership. Skilled in software development and collaboration, eager to grow through real-world projects.",
-  skills: ["HTML", "CSS", "Flutter/Dart", "Node.js", "PHP", "Python", "Basic Docker", "Java"],
+  skills: ["HTML", "CSS", "Flutter/Dart", "Node.js", "PHP", "Basic Figma", "Python", "Basic Docker", "Java"],
   projects: [
     {
       title: "Autonomous Monitoring Control System - Electromagnetic Field Monitoring",
@@ -122,7 +122,7 @@ function renderPortfolio() {
               <span class="highlight">Hi, I'm</span> ${portfolioData.name}
             </h1>
             <div class="hero-profile-image">
-              <img src="/images/profile.jpg" alt="${portfolioData.name}" class="profile-image">
+              <img src="/richly-harald-j-portofolio/images/profile.jpg" alt="${portfolioData.name}" class="profile-image">
             </div>
             <h2 class="hero-subtitle">${portfolioData.title}</h2>
             <p class="hero-description">${portfolioData.bio}</p>
@@ -247,4 +247,5 @@ renderPortfolio();
 
 // Make functions globally available for onclick handlers
 (window as any).scrollToSection = scrollToSection;
+(window as any).handleEmailClick = handleEmailClick;
 (window as any).handleEmailClick = handleEmailClick;
