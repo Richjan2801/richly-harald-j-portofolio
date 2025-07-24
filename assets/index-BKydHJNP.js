@@ -2,7 +2,7 @@
 
 I found your portfolio and would like to discuss...`),s=`mailto:${o}?subject=${t}&body=${a}`,e=document.createElement("a");e.href=s,e.click(),setTimeout(()=>{navigator.clipboard?navigator.clipboard.writeText(o).then(()=>{alert(`Email address copied to clipboard: ${o}
 
-Since no email client opened, you can paste this into your preferred email app.`)}).catch(()=>{prompt("Copy this email address:",o)}):prompt("Copy this email address:",o)},100)}function d(){l=!l;const o=document.querySelector(".nav-menu"),t=document.querySelector(".hamburger");o&&t&&(o.classList.toggle("active",l),t.classList.toggle("active",l))}function p(o){const t=document.getElementById(o);t&&(t.scrollIntoView({behavior:"smooth"}),l&&d())}function u(){const o=document.querySelector("#app");o.innerHTML=`
+Since no email client opened, you can paste this into your preferred email app.`)}).catch(()=>{prompt("Copy this email address:",o)}):prompt("Copy this email address:",o)},100)}function d(){l=!l;const o=document.querySelector(".nav-menu"),t=document.querySelector(".hamburger");o&&t&&(o.classList.toggle("active",l),t.classList.toggle("active",l))}function p(o){const t=document.getElementById(o);t&&(t.scrollIntoView({behavior:"smooth"}),l&&d())}function h(){const o=document.querySelector("#app");o.innerHTML=`
     <header class="header">
       <nav class="navbar">
         <div class="nav-brand">
@@ -27,17 +27,19 @@ Since no email client opened, you can paste this into your preferred email app.`
       <section id="home" class="hero">
         <div class="container">
           <div class="hero-content">
-            <h1 class="hero-title">
-              <span class="highlight">Hi, I'm</span> ${n.name}
-            </h1>
             <div class="hero-profile-image">
-              <img src="/richly-harald-j-portofolio/images/profile.jpg" alt="${n.name}" class="profile-image">
+              <img src="/richly-harald-j-portofolio/images/profile2.jpg" alt="${n.name}" class="profile-image">
             </div>
-            <h2 class="hero-subtitle">${n.title}</h2>
-            <p class="hero-description">${n.bio}</p>
-            <div class="hero-actions">
-              <button class="btn btn-primary" onclick="scrollToSection('projects')">View Projects</button>
-              <button class="btn btn-secondary" onclick="scrollToSection('contact')">Get In Touch</button>
+            <div class="hero-text-content">
+              <h1 class="hero-title">
+                <span class="highlight">Hi, I'm</span> ${n.name}
+              </h1>
+              <h2 class="hero-subtitle">${n.title}</h2>
+              <p class="hero-description">${n.bio}</p>
+              <div class="hero-actions">
+                <button class="btn btn-primary" onclick="scrollToSection('projects')">View Projects</button>
+                <button class="btn btn-secondary" onclick="scrollToSection('contact')">Get In Touch</button>
+              </div>
             </div>
           </div>
         </div>
@@ -129,4 +131,4 @@ Since no email client opened, you can paste this into your preferred email app.`
         <p>&copy; 2025 ${n.name}. All rights reserved.</p>
       </div>
     </footer>
-  `;const t=document.querySelector(".hamburger"),a=document.querySelectorAll(".nav-link");t&&t.addEventListener("click",d),a.forEach(s=>{s.addEventListener("click",e=>{e.preventDefault();const i=s.getAttribute("href");if(i){const c=i.substring(1);p(c)}})})}u();window.scrollToSection=p;window.handleEmailClick=r;window.handleEmailClick=r;
+  `;const t=document.querySelector(".hamburger"),a=document.querySelectorAll(".nav-link");t&&t.addEventListener("click",d),a.forEach(s=>{s.addEventListener("click",e=>{e.preventDefault();const i=s.getAttribute("href");if(i){const c=i.substring(1);p(c)}})})}h();window.scrollToSection=p;window.handleEmailClick=r;window.handleEmailClick=r;
